@@ -16,7 +16,7 @@ export const defaultEnv = {
     // 0-2
     APITemperature: 0.6,
     continuousDialogue: true,
-    model: "gpt-3.5" as SimpleModel
+    model: "gpt-4" as SimpleModel
   },
   CLIENT_DEFAULT_MESSAGE: `Powered by OpenAI Vercel
 喵。
