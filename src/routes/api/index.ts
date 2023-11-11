@@ -51,7 +51,7 @@ export async function POST({ request }: APIEvent) {
         } else {
           throw new Error("没有填写 OpenAI API key，不会查询内置的 Key。")
         }
-      } else if (content.startsWith("sk-") || content.startsWith("sess-")) {
+      } else {
         const billings = await Promise.all(
           splitKeys(content).map(k => fetchBilling(k))
         )
